@@ -13,7 +13,8 @@ export default {
       },
       animation: {
         'gradient-x': 'gradient-x 2s ease-in-out infinite',
-        float: "float 10s ease-in-out infinite",
+        floatX: "floatX 10s ease-in-out infinite",
+        floatY: "floatY 10s ease-in-out infinite",
       },
       keyframes: {
         'gradient-x': {
@@ -24,9 +25,13 @@ export default {
             backgroundPosition: '100% 50%',
           },
         },
-        float: {
+        floatX: {
           "0%, 100%": { transform: "translateX(0px)" },
           "50%": { transform: "translateX(-40px)" },
+        },
+        floatY: {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-40px)" },
         },
       },
     },

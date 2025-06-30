@@ -27,7 +27,7 @@ export default function Header() {
     return (
         <header className="bg-gray-800/40 backdrop-blur-md text-white fixed w-full z-50 border-b border-white/10 shadow-md">
             
-            <div className="container mx-auto flex justify-between p-3 md:p-5 h-[80px] md:h-[104px]">
+            <div className="container mx-auto flex justify-between p-3 md:p-5 h-[80px] md:h-[104px] px-6">
 
                 <p className="font-Shizuru font-bold text-4xl hover:scale-125 origin-left transition-all duration-1000 flex items-center justify-center text-transparent bg-clip-text bg-[length:300%_300%] animate-gradient-x bg-gradient-to-r from-fuchsia-500 via-pink-500 to-orange-400">MANIK</p>
 
