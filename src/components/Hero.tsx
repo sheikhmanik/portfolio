@@ -27,13 +27,13 @@ export default function Hero() {
                     <button className="font-ComicNeue font-semibold px-7 py-3 rounded-3xl bg-gradient-to-r from-fuchsia-500 via-pink-500 to-orange-400 text-white">
                         Connect with me
                     </button>
-                    <a
+                    {/* <a
                         href={resume}
                         download
                         className="font-ComicNeue font-semibold border-2 transition-colors duration-150 hover:border-blue-700 px-7 py-3 rounded-3xl text-white"
                     >
                         My Resume
-                    </a>
+                    </a> */}
 
                 </div>
             </div>
