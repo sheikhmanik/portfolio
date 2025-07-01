@@ -1,5 +1,4 @@
 import dp from "../assets/dp.jpg";
-import resume from "../assets/manik-resume.pdf";
 import TypewriterText from "../ui/Typewriter";
 
 export default function Hero() {
@@ -24,17 +23,9 @@ export default function Hero() {
                     </div>
                 </section>
                 <div className="mt-5 flex items-center justify-center gap-5">
-                    <button className="font-ComicNeue font-semibold px-7 py-3 rounded-3xl bg-gradient-to-r from-fuchsia-500 via-pink-500 to-orange-400 text-white">
+                    <button onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })} className="font-ComicNeue font-semibold px-7 py-3 rounded-3xl bg-gradient-to-r from-fuchsia-500 via-pink-500 to-orange-400 text-white">
                         Connect with me
                     </button>
-                    {/* <a
-                        href={resume}
-                        download
-                        className="font-ComicNeue font-semibold border-2 transition-colors duration-150 hover:border-blue-700 px-7 py-3 rounded-3xl text-white"
-                    >
-                        My Resume
-                    </a> */}
-
                 </div>
             </div>
         </div>

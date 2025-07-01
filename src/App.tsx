@@ -4,11 +4,12 @@ import bgImage from "./assets/bg-1.png"
 import Services from "./components/Services";
 import Toolbox from "./components/Toolbox";
 import Project from "./components/Project";
+import Contact from "./components/Contact";
 
 function App() {
   return (
     <div
-      className="min-h-screen bg-cover bg-center bg-no-repeat bg-fixed pb-20"
+      className="min-h-screen bg-cover bg-center bg-no-repeat bg-fixed"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <Header/>
@@ -17,6 +18,7 @@ function App() {
         <Services/>
         <Toolbox/>
         <Project/>
+        <Contact/>
       </div>
     </div>
   )
