@@ -14,16 +14,16 @@ export default function Hero() {
                 <section className="flex flex-col items-center justify-center mt-5 px-4 text-white md:text-center">
                     <TypewriterText text="Hy! I'm Manik.." />
                     <div>
-                        <p className="text-gray-300 text-lg leading-relaxed max-w-2xl font-Eater mb-2 text-start">
+                        <p className="text-gray-300 text-lg leading-relaxed max-w-2xl font-Playfair mb-2 text-start">
                             A <span className="text-indigo-400 font-semibold">Frontend Developer</span> focused on building accessible, performant, and beautiful web apps using <span className="text-rose-400 font-semibold">React</span>, <span className="text-blue-400 font-semibold">TypeScript</span>, and <span className="text-cyan-400 font-semibold">Tailwind CSS</span>.
                         </p>
-                        <p className="text-gray-400 text-base leading-relaxed max-w-xl font-ComicNeue text-start">
+                        <p className="text-gray-400 text-base leading-relaxed max-w-xl font-Lato text-start">
                             I'm experienced in managing component state, optimizing rendering performance, and working with design systems. I value clean abstractions, predictable code, and great user experiences.
                         </p>
                     </div>
                 </section>
                 <div className="mt-5 flex items-center justify-center gap-5">
-                    <button onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })} className="font-ComicNeue font-semibold px-7 py-3 rounded-3xl bg-gradient-to-r from-fuchsia-500 via-pink-500 to-orange-400 text-white">
+                    <button onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })} className="font-Lato font-semibold px-7 py-3 rounded-3xl bg-gradient-to-r from-fuchsia-500 via-pink-500 to-orange-400 text-white">
                         Connect with me
                     </button>
                 </div>

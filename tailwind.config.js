@@ -7,9 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'Eater': 'Eater',
-        'Shizuru': 'Shizuru',
-        'ComicNeue': 'Comic Neue',
+        'Playfair': 'Playfair Display',
+        'Lato': 'Lato',
       },
       animation: {
         'gradient-x': 'gradient-x 2s ease-in-out infinite',

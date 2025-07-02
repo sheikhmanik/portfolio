@@ -31,17 +31,17 @@ export default function Services() {
     ];
 
     return (
-        <div className="py-10 scroll-mt-20" id="services">
+        <div className="pt-10 scroll-mt-20" id="services">
             <div className="container mx-auto flex flex-col sm:flex-row gap-5">
                 <img src={services} className="sm:w-1/2 animate-floatY sm:animate-floatX" />
                 <div className="sm:w-1/2 pt-3 space-y-5 text-center sm:text-start">
-                    <p className="font-Eater font-bold text-4xl lg:text-7xl origin-left transition-all duration-1000 bg-[length:300%_300%] animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r to-red-500 via-slate-500 from-slate-400">My Awesome Services</p>
-                    <p className="font-Shizuru font-bold text-xl md:text-3xl origin-left transition-all duration-1000 bg-[length:300%_300%] animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r to-red-500 via-slate-500 from-slate-400 px-5 sm:px-0">I always strive to deliver the best user experience..</p>
+                    <p className="font-Playfair font-bold text-4xl lg:text-7xl origin-left transition-all duration-1000 bg-[length:300%_300%] animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r to-red-500 via-slate-500 from-slate-400">My Awesome Services</p>
+                    <p className="font-Lato font-bold text-xl md:text-3xl origin-left transition-all duration-1000 bg-[length:300%_300%] animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r to-red-500 via-slate-500 from-slate-400 px-5 sm:px-0">I always strive to deliver the best user experience..</p>
                     <button className="pt-3">
                         <a
                             href={resume}
                             download
-                            className="font-ComicNeue font-semibold border-2 transition-colors duration-150 hover:border-blue-700 px-7 py-3 rounded-3xl text-white"
+                            className="font-Lato font-semibold border-2 transition-colors duration-150 hover:border-blue-700 px-7 py-3 rounded-3xl text-white"
                         >
                             My Resume
                         </a>
@@ -61,8 +61,8 @@ export default function Services() {
                                 alt={item.title}
                                 className="rounded-xl h-40 w-full object-cover mb-4"
                             />
-                            <h2 className="font-Eater font-bold text-2xl transition-all duration-1000 flex items-center justify-center text-transparent bg-clip-text bg-[length:300%_300%] animate-gradient-x bg-gradient-to-r from-fuchsia-500 via-pink-500 to-orange-400">{item.title}</h2>
-                            <p className="font-ComicNeue text-gray-300 text-base leading-relaxed text-center p-2">
+                            <h2 className="font-Playfair font-bold text-2xl transition-all duration-1000 flex items-center justify-center text-transparent bg-clip-text bg-[length:300%_300%] animate-gradient-x bg-gradient-to-r from-fuchsia-500 via-pink-500 to-orange-400">{item.title}</h2>
+                            <p className="font-Lato text-gray-300 text-base leading-relaxed text-center p-2">
                                 {item.text}
                             </p>
                         </div>

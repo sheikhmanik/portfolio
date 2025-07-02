@@ -28,12 +28,12 @@ export default function Toolbox() {
     ];
 
     return (
-        <div className="py-10 scroll-mt-20" id="toolbox">
+        <div className="pt-7 scroll-mt-20" id="toolbox">
             <div className="container mx-auto flex flex-col sm:flex-row items-center justify-center gap-5">
                 <img src={toolboxImg} className="sm:w-1/2 animate-floatY sm:animate-floatX rounded-xl" />
                 <div className="sm:w-1/2 pt-3 space-y-5 text-center sm:text-start">
-                    <p className="font-Eater font-bold text-3xl lg:text-6xl origin-left transition-all duration-1000 bg-[length:300%_300%] animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r to-red-500 via-slate-500 from-slate-400">What's in my toolbox?</p>
-                    <p className="font-Shizuru font-bold text-xl lg:text-3xl origin-left transition-all duration-1000 bg-[length:300%_300%] animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r to-red-500 via-slate-500 from-slate-400">Some of the awesome technologies I love to work with..</p>
+                    <p className="font-Playfair font-bold text-3xl lg:text-6xl origin-left transition-all duration-1000 bg-[length:300%_300%] animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r to-red-500 via-slate-500 from-slate-400">What's in my toolbox?</p>
+                    <p className="font-Lato font-bold text-xl lg:text-3xl origin-left transition-all duration-1000 bg-[length:300%_300%] animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r to-red-500 via-slate-500 from-slate-400">Some of the awesome technologies I love to work with..</p>
                 </div>
             </div>
             <div className="mt-12 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-6 place-items-center">
@@ -47,7 +47,7 @@ export default function Toolbox() {
                             alt={tool.label}
                             className="w-14 h-14 sm:w-16 sm:h-16 object-contain bg-cover border-2 border-indigo-500 rounded-xl p-2 shadow-sm"
                         />
-                        <span className="text-sm text-gray-300 mt-2 font-ComicNeue tracking-wide">
+                        <span className="text-sm text-gray-300 mt-2 font-Lato tracking-wide">
                             {tool.label}
                         </span>
                     </div>

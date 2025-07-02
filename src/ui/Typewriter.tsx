@@ -24,7 +24,7 @@ export default function TypewriterText ({ text }: { text: string }) {
     }, [index, text]);
 
     return (
-        <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-[length:300%_300%] animate-gradient-x bg-gradient-to-r from-fuchsia-500 via-pink-500 to-orange-400 mb-4 font-Eater">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-[length:300%_300%] animate-gradient-x bg-gradient-to-r from-fuchsia-500 via-pink-500 to-orange-400 mb-4 font-Playfair">
             {displayedText}
             <span className="animate-pulse">|</span>
         </h1>

@@ -4,12 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Contact() {
     return (
-        <section id="contact" className="scroll-mt-28 container mx-auto p-4 text-center space-y-6">
-            <h2 className="text-4xl md:text-5xl font-Eater font-bold text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-pink-500 to-orange-400">
+        <section id="contact" className="pt-7 scroll-mt-28 container mx-auto p-4 text-center space-y-6">
+            <h2 className="text-4xl md:text-5xl font-Playfair font-bold text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-pink-500 to-orange-400">
                 Let’s Connect
             </h2>
 
-            <p className="text-gray-300 font-ComicNeue max-w-2xl mx-auto text-lg leading-relaxed">
+            <p className="text-gray-300 font-Lato max-w-2xl mx-auto text-lg leading-relaxed">
                 I'm always open to discussing new projects, creative ideas, or opportunities to collaborate. Feel free to connect with me through the platforms below. Let's build something awesome together!
             </p>
 

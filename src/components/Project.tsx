@@ -46,14 +46,14 @@ export default function Project() {
     ];
 
     return (
-        <div className="py-10 scroll-mt-20" id="project">
+        <div className="pt-10 scroll-mt-20" id="project">
             <div className="container mx-auto flex flex-col sm:flex-row items-center justify-center gap-5">
                 <img src={project} className="sm:w-1/2 animate-floatY sm:animate-floatX rounded-xl" />
                 <div className="sm:w-1/2 pt-3 space-y-5 text-center sm:text-start">
-                    <p className="font-Eater font-bold text-3xl lg:text-6xl origin-left transition-all duration-1000 bg-[length:300%_300%] animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r to-red-500 via-slate-500 from-slate-400">
+                    <p className="font-Playfair font-bold text-3xl lg:text-6xl origin-left transition-all duration-1000 bg-[length:300%_300%] animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r to-red-500 via-slate-500 from-slate-400">
                         Some Things I’ve Built
                     </p>
-                    <p className="font-Shizuru font-bold text-xl lg:text-3xl origin-left transition-all duration-1000 bg-[length:300%_300%] animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r to-red-500 via-slate-500 from-slate-400">
+                    <p className="font-Lato font-bold text-xl lg:text-3xl origin-left transition-all duration-1000 bg-[length:300%_300%] animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r to-red-500 via-slate-500 from-slate-400">
                         Real-world projects showcasing my skills in React, TypeScript, and Tailwind CSS.
                     </p>
                 </div>
@@ -71,10 +71,10 @@ export default function Project() {
                                 alt={item.title}
                                 className="rounded-xl h-40 w-full object-cover mb-4"
                             />
-                            <h2 className="font-Eater font-bold text-2xl text-center text-transparent bg-clip-text bg-[length:300%_300%] animate-gradient-x bg-gradient-to-r from-fuchsia-500 via-pink-500 to-orange-400">
+                            <h2 className="font-Playfair font-bold text-2xl text-center text-transparent bg-clip-text bg-[length:300%_300%] animate-gradient-x bg-gradient-to-r from-fuchsia-500 via-pink-500 to-orange-400">
                                 {item.title}
                             </h2>
-                            <p className="font-ComicNeue text-gray-300 text-base leading-relaxed text-center p-2">
+                            <p className="font-Lato text-gray-300 text-base leading-relaxed text-center p-2">
                                 {item.text}
                             </p>
                             <div className="flex justify-center gap-4 mt-4">
@@ -82,7 +82,7 @@ export default function Project() {
                                     href={item.github}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-2 font-ComicNeue text-white border border-gray-600 px-4 py-2 rounded-xl hover:bg-gray-700 transition"
+                                    className="flex items-center gap-2 font-Lato text-white border border-gray-600 px-4 py-2 rounded-xl hover:bg-gray-700 transition"
                                 >
                                     <FontAwesomeIcon icon={faGithub}/> GitHub
                                 </a>
@@ -90,7 +90,7 @@ export default function Project() {
                                     href={item.live}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-2 font-ComicNeue text-white border border-blue-600 px-4 py-2 rounded-xl hover:bg-blue-800 transition"
+                                    className="flex items-center gap-2 font-Lato text-white border border-blue-600 px-4 py-2 rounded-xl hover:bg-blue-800 transition"
                                 >
                                     <FontAwesomeIcon icon={faTachographDigital}/> Live
                                 </a>
