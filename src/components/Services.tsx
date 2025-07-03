@@ -1,4 +1,4 @@
-import services from "../assets/services.svg";
+import services from "../assets/services.png";
 import resume from "../assets/manik-resume.pdf";
 import frontend from "../assets/frontend.png";
 import fastSecure from "../assets/fast-secure.png";
@@ -33,7 +33,7 @@ export default function Services() {
     return (
         <div className="pt-10 scroll-mt-20" id="services">
             <div className="container mx-auto flex flex-col sm:flex-row gap-5">
-                <img src={services} className="sm:w-1/2 animate-floatY sm:animate-floatX" />
+                <img src={services} className="sm:w-1/2 animate-floatY sm:animate-floatX rounded-xl" />
                 <div className="sm:w-1/2 pt-3 space-y-5 text-center sm:text-start">
                     <p className="font-Playfair font-bold text-4xl lg:text-7xl origin-left transition-all duration-1000 bg-[length:300%_300%] animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r to-red-500 via-slate-500 from-slate-400">My Awesome Services</p>
                     <p className="font-Lato font-bold text-xl md:text-3xl origin-left transition-all duration-1000 bg-[length:300%_300%] animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r to-red-500 via-slate-500 from-slate-400 px-5 sm:px-0">I always strive to deliver the best user experience..</p>
