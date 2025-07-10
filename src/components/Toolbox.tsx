@@ -34,8 +34,8 @@ export default function Toolbox() {
             <div className="container mx-auto flex flex-col sm:flex-row items-center justify-center gap-5">
                 <Image alt="" src={toolboxImg} className="sm:w-1/2 rounded-xl" />
                 <div className="sm:w-1/2 pt-3 space-y-5 text-center sm:text-start">
-                    <p className="font-playfair font-bold text-3xl lg:text-6xl origin-left transition-all duration-1000 bg-[length:300%_300%] animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r to-red-500 via-slate-500 from-slate-400">What's in my toolbox?</p>
-                    <p className="font-lato font-bold text-xl lg:text-3xl origin-left transition-all duration-1000 bg-[length:300%_300%] animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r to-red-500 via-slate-500 from-slate-400">Some of the awesome technologies I love to work with..</p>
+                    <p className="font-playfair font-bold text-2xl lg:text-5xl origin-left transition-all duration-1000 bg-[length:300%_300%] animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r to-red-500 via-slate-500 from-slate-400">What's in my toolbox?</p>
+                    <p className="font-lato font-bold text-xl lg:text-2xl origin-left transition-all duration-1000 bg-[length:300%_300%] animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r to-red-500 via-slate-500 from-slate-400">Some of the awesome technologies I love to work with..</p>
                 </div>
             </div>
             <div className="mt-12 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-6 place-items-center">

@@ -52,10 +52,10 @@ export default function Project() {
             <div className="container mx-auto flex flex-col sm:flex-row items-center justify-center gap-5">
                 <Image alt="" src={project} className="sm:w-1/2 rounded-xl" />
                 <div className="sm:w-1/2 pt-3 space-y-5 text-center sm:text-start">
-                    <p className="font-playfair font-bold text-3xl lg:text-6xl origin-left transition-all duration-1000 bg-[length:300%_300%] animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r to-red-500 via-slate-500 from-slate-400 sm:py-2">
+                    <p className="font-playfair font-bold text-2xl lg:text-5xl origin-left transition-all duration-1000 bg-[length:300%_300%] animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r to-red-500 via-slate-500 from-slate-400">
                         Some Things I’ve Built
                     </p>
-                    <p className="font-lato font-bold text-xl lg:text-3xl origin-left transition-all duration-1000 bg-[length:300%_300%] animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r to-red-500 via-slate-500 from-slate-400">
+                    <p className="font-lato font-bold text-xl lg:text-2xl origin-left transition-all duration-1000 bg-[length:300%_300%] animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r to-red-500 via-slate-500 from-slate-400">
                         Real-world projects showcasing my skills in React, TypeScript, and Tailwind CSS.
                     </p>
                 </div>
