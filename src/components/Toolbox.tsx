@@ -4,6 +4,7 @@ import html from "@/assets/html.png";
 import css from "@/assets/css.jpg";
 import tailwind from "@/assets/tailwind.png";
 import js from "@/assets/js.png";
+import nextjs from "@/assets/nextjs.png";
 import react from "@/assets/react.png";
 import typescript from "@/assets/typescript.png";
 import vscode from "@/assets/vscode.jpg";
@@ -20,7 +21,8 @@ export default function Toolbox() {
         { img: css, label: "CSS" },
         { img: tailwind, label: "Tailwind" },
         { img: js, label: "JavaScript" },
-        { img: react, label: "React" },
+        { img: nextjs, label: "Next.js" },
+        { img: react, label: "React.js" },
         { img: typescript, label: "TypeScript" },
         { img: vscode, label: "VS Code" },
         { img: git, label: "Git" },

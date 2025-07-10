@@ -8,6 +8,10 @@ export default function Header() {
     const [dropDown, setDropDown] = useState<boolean>(false);
     const dropdownRef = useRef<HTMLDivElement | null>(null);
 
+    function handleLogoClick() {
+        window.scrollTo({top: 0, behavior: "smooth"});
+    }
+
     function closeNav(section: string) {
         setDropDown(false);
         document.getElementById(section)?.scrollIntoView({ behavior: "smooth" })
@@ -32,7 +36,7 @@ export default function Header() {
             
             <div className="container mx-auto flex items-center justify-between p-3 md:p-5 h-[70px] md:h-[94px] px-6">
 
-                <p className="font-fairplay font-bold text-4xl hover:scale-125 origin-left transition-all duration-1000 flex items-center justify-center text-transparent bg-clip-text bg-[length:300%_300%] animate-gradient-x bg-gradient-to-r from-fuchsia-500 via-pink-500 to-orange-400">MANIK</p>
+                <p onClick={handleLogoClick} className="font-fairplay font-bold text-4xl hover:scale-125 origin-left transition-all duration-1000 flex items-center justify-center text-transparent bg-clip-text bg-[length:300%_300%] animate-gradient-x bg-gradient-to-r from-fuchsia-500 via-pink-500 to-orange-400 cursor-pointer">MANIK</p>
 
                 <div className="hidden md:flex items-center justify-center gap-7 font-lato font-bold text-[1.2rem]">
                     <button onClick={() => closeNav("services")} className="hover:scale-105 px-1 hover:border-b-2 transition-all duration-300 cursor-pointer">Services</button>
