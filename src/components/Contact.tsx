@@ -11,7 +11,7 @@ export default function Contact() {
             </h2>
 
             <p className="text-gray-300 font-lato max-w-2xl mx-auto text-lg leading-relaxed">
-                I'm always open to discussing new projects, creative ideas, or opportunities to collaborate. Feel free to connect with me through the platforms below. Let's build something awesome together!
+                I’m always open to discussing new projects, creative ideas, or opportunities to collaborate. Feel free to connect with me through the platforms below. Let’s build something awesome together!
             </p>
 
             <div className="flex justify-center gap-8 pt-4">
