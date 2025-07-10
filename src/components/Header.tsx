@@ -47,7 +47,7 @@ export default function Header() {
                         <FontAwesomeIcon icon={faBars}/>
                     </button>
 
-                    <div className={`${dropDown ? 'scale-100' : 'scale-0'} absolute flex flex-col transition-all origin-top-right duration-500 bg-gray-700/80 text-white top-6 font-lato font-bold text-[1rem] w-[110px] h-auto rounded-lg rounded-tr-none`}>
+                    <div className={`${dropDown ? 'scale-100' : 'scale-0'} absolute flex flex-col transition-all origin-top-right duration-500 bg-gray-700/80 text-white top-7 font-lato font-bold text-[1rem] w-[110px] h-auto rounded-lg rounded-tr-none`}>
                         <button onClick={() => closeNav("services")} className="uppercase p-4 transition-all duration-300 hover:bg-gray-300/20 rounded-lg cursor-pointer">Services</button>
                         <button onClick={() => closeNav("toolbox")} className="uppercase p-4 transition-all duration-300 hover:bg-gray-300/20 rounded-lg cursor-pointer">Toolbox</button>
                         <button onClick={() => closeNav("project")} className="uppercase p-4 transition-all duration-300 hover:bg-gray-300/20 rounded-lg cursor-pointer">Project</button>
