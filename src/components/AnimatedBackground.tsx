@@ -5,7 +5,7 @@ import gsap from "gsap";
 
 export default function AnimatedBackground() {
     useEffect(() => {
-        const floatBlob = (selector: string, config: any) => {
+        const floatBlob = (selector: string, config: gsap.TweenVars) => {
             gsap.to(selector, {
                 ...config,
                 repeat: -1,
