@@ -13,8 +13,35 @@ import github from "@/assets/github.webp";
 import npm from "@/assets/npm.png";
 import vite from "@/assets/vite.png";
 import Image, { StaticImageData } from "next/image";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function Toolbox() {
+
+    const sectionRef = useRef(null);
+
+    useEffect(() => {
+        // Register plugin (very important)
+        gsap.registerPlugin(ScrollTrigger);
+    
+        gsap.fromTo(
+            sectionRef.current,
+            { opacity: 0, y: 50 },
+                {
+                    opacity: 1,
+                    y: 0,
+                    duration: 1,
+                    ease: "power2.out",
+                    scrollTrigger: {
+                    trigger: sectionRef.current,
+                    start: "top 80%", // when top of element hits 80% of viewport
+                    toggleActions: "play none none none", // control animation behavior
+                },
+            }
+        );
+    }, []);
+    
 
     const tools: { img: StaticImageData; label: string }[] = [
         { img: html, label: "HTML" },
@@ -32,7 +59,7 @@ export default function Toolbox() {
     ];
 
     return (
-        <div className="pt-7 scroll-mt-20" id="toolbox">
+        <div ref={sectionRef} className="pt-7 scroll-mt-20" id="toolbox">
             <div className="container mx-auto flex flex-col sm:flex-row items-center justify-center gap-5">
                 <Image alt="" src={toolboxImg} className="sm:w-1/2 rounded-xl" />
                 <div className="sm:w-1/2 gap-3 lg:gap-5 text-center sm:text-start flex flex-col sm:items-start justify-center">

@@ -8,8 +8,35 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faTachographDigital } from "@fortawesome/free-solid-svg-icons";
 import Image, { StaticImageData } from "next/image";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function Project() {
+
+    const sectionRef = useRef(null);
+
+    useEffect(() => {
+        // Register plugin (very important)
+        gsap.registerPlugin(ScrollTrigger);
+    
+        gsap.fromTo(
+            sectionRef.current,
+            { opacity: 0, y: 50 },
+                {
+                    opacity: 1,
+                    y: 0,
+                    duration: 1,
+                    ease: "power2.out",
+                    scrollTrigger: {
+                    trigger: sectionRef.current,
+                    start: "top 80%", // when top of element hits 80% of viewport
+                    toggleActions: "play none none none", // control animation behavior
+                },
+            }
+        );
+    }, []);
+
     const items: {
         title: string;
         img: StaticImageData;
@@ -20,35 +47,35 @@ export default function Project() {
         {
             title: "Amazon Clone",
             img: amazon,
-            text: "A responsive full-stack Amazon clone with product listing, cart, and authentication. Built with React and Firebase.",
+            text: "A responsive Amazon clone with authentication, product listing, cart features. Built using ReactJS, TailwindCSS, NodeJS, Express, MySQL, and JavaScript.",
             github: "https://github.com/sheikhmanik/amazon",
             live: "https://teal-heliotrope-50b11d.netlify.app/",
         },
         {
             title: "Weather App",
             img: weather,
-            text: "A clean and minimal weather app that fetches and displays weather data. Built using React, OpenWeatherMap API, and Tailwind CSS.",
+            text: "A clean, minimal weather app showing real-time data. Built with React, Tailwind CSS, and Weather API for dynamic weather updates.",
             github: "https://github.com/sheikhmanik/weather-app",
             live: "https://ephemeral-unicorn-826761.netlify.app/",
         },
         {
             title: "Restaurant",
             img: restaurant,
-            text: "A fully responsive website for a real Bangladeshi restaurant — Emran's Heritage Home. Built with HTML, CSS, and JavaScript, it includes a menu section, gallery, contact form, and a clean modern layout.",
+            text: "A responsive website for Emran's Heritage Home, featuring menu, gallery, contact form, and modern layout using JavaScript, ReactJS, TailwindCSS.",
             github: "https://github.com/sheikhmanik/",
             live: "https://www.emransheritagehome.com",
         },
         {
             title: "To-Do App",
             img: todo,
-            text: "A simple yet powerful To-Do app with task creation, deletion, and local storage. Built with React + TypeScript.",
+            text: "A simple yet efficient To-Do app with task creation, deletion, local storage. Built using React, TypeScript, and TailwindCSS.",
             github: "https://github.com/sheikhmanik/todoapp",
             live: "https://timely-jalebi-954d48.netlify.app",
         },
     ];
 
     return (
-        <div className="pt-10 scroll-mt-20" id="project">
+        <div ref={sectionRef} className="pt-10 scroll-mt-20" id="project">
             <div className="container mx-auto flex flex-col sm:flex-row items-center justify-center gap-5">
                 <Image alt="" src={project} className="sm:w-1/2 rounded-xl" />
                 <div className="sm:w-1/2 gap-3 lg:gap-5 text-center sm:text-start flex flex-col sm:items-start justify-center">
@@ -59,7 +86,7 @@ export default function Project() {
                 </div>
             </div>
 
-            <section className="p-4">
+            <section className="p-4 pt-5">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     {items.map((item, index) => (
                         <div
@@ -100,5 +127,5 @@ export default function Project() {
                 </div>
             </section>
         </div>
-    );
-};
+    )
+}

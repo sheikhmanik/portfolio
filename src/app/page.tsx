@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div
       className="min-h-screen bg-cover bg-center bg-no-repeat bg-fixed"
-      style={{ backgroundImage: `url(${bgImage.src})` }}
+      // style={{ backgroundImage: `url(${bgImage.src})` }}
     >
       <Header/>
       <div className="container mx-auto pt-[88px] md:pt-28 px-3 md:px-5 space-y-10">

@@ -2,10 +2,37 @@
 import { faLinkedin, faGithub, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function Contact() {
+
+    const sectionRef = useRef(null);
+
+    useEffect(() => {
+        // Register plugin (very important)
+        gsap.registerPlugin(ScrollTrigger);
+    
+        gsap.fromTo(
+            sectionRef.current,
+            { opacity: 0, y: 50 },
+                {
+                    opacity: 1,
+                    y: 0,
+                    duration: 1,
+                    ease: "power2.out",
+                    scrollTrigger: {
+                    trigger: sectionRef.current,
+                    start: "top 80%", // when top of element hits 80% of viewport
+                    toggleActions: "play none none none", // control animation behavior
+                },
+            }
+        );
+    }, []);
+
     return (
-        <section id="contact" className="pt-7 scroll-mt-28 container mx-auto p-4 text-center space-y-6">
+        <section ref={sectionRef} id="contact" className="scroll-mt-28 container mx-auto p-4 text-center space-y-6">
             <h2 className="text-4xl md:text-5xl font-playfair font-bold text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-pink-500 to-orange-400">
                 Let’s Connect
             </h2>
@@ -49,5 +76,5 @@ export default function Contact() {
 
             <p className="text-sm text-gray-500 pt-2">© {new Date().getFullYear()} Manik. All rights reserved.</p>
         </section>
-    );
-};
+    )
+}
