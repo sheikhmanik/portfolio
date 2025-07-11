@@ -26,7 +26,7 @@ export default function Hero() {
                             Connect with me
                         </button>
                         <a
-                            href="/assets/manik-resume.pdf"
+                            href="/manik-resume.pdf"
                             download
                             className="font-lato font-semibold px-6 sm:px-8 py-2.5 sm:py-3 rounded-4xl border-2 border-white text-white hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300 text-sm sm:text-base"
                         >
