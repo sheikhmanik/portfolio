@@ -35,12 +35,12 @@ export default function Toolbox() {
         <div className="pt-7 scroll-mt-20" id="toolbox">
             <div className="container mx-auto flex flex-col sm:flex-row items-center justify-center gap-5">
                 <Image alt="" src={toolboxImg} className="sm:w-1/2 rounded-xl" />
-                <div className="sm:w-1/2 pt-3 space-y-5 text-center sm:text-start">
-                    <p className="font-playfair font-bold text-2xl lg:text-5xl origin-left transition-all duration-1000 bg-[length:300%_300%] animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r to-red-500 via-slate-500 from-slate-400">What’s in my toolbox?</p>
-                    <p className="font-lato font-bold text-xl lg:text-2xl origin-left transition-all duration-1000 bg-[length:300%_300%] animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r to-red-500 via-slate-500 from-slate-400">Some of the awesome technologies I love to work with..</p>
+                <div className="sm:w-1/2 gap-3 lg:gap-5 text-center sm:text-start flex flex-col sm:items-start justify-center">
+                    <p className="font-playfair font-extrabold text-3xl md:text-5xl leading-tight origin-left transition-all duration-1000 bg-[length:300%_300%] animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r to-red-500 via-slate-500 from-slate-400">What’s in my toolbox?</p>
+                    <p className="font-lato font-medium text-base md:text-lg origin-left transition-all duration-1000 bg-[length:300%_300%] animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r to-red-500 via-slate-500 from-slate-400 px-5 sm:px-0">Here are some of the incredible technologies I genuinely enjoy working with—tools and frameworks that not only empower my creativity but also help me build efficient, beautiful, and scalable user interfaces.</p>
                 </div>
             </div>
-            <div className="mt-12 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-6 place-items-center">
+            <div className="mt-7 sm:mt-12 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-6 place-items-center">
                 {tools.map((tool, index) => (
                     <div
                         key={index}

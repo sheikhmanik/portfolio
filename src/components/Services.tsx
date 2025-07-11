@@ -36,20 +36,11 @@ export default function Services() {
             <div className="container mx-auto flex flex-col sm:flex-row items-center gap-5 py-5 h-auto">
                 <Image alt="" src={services} className="sm:w-1/2 h-full sm:animate-floatX rounded-xl" />
                 <div className="sm:w-1/2 gap-3 lg:gap-5 text-center sm:text-start flex flex-col sm:items-start justify-center">
-                    <p className="font-playfair font-bold text-2xl lg:text-5xl origin-left transition-all duration-1000 bg-[length:300%_300%] animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r to-red-500 via-slate-500 from-slate-400">My Awesome Services</p>
-                    <p className="font-lato font-bold text-xl lg:text-2xl origin-left transition-all duration-1000 bg-[length:300%_300%] animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r to-red-500 via-slate-500 from-slate-400 px-5 sm:px-0">I always strive to deliver the best user experience..</p>
-                    <button className="pt-2">
-                        <a
-                            href="/public/assets/manik-resume.pdf"
-                            download
-                            className="font-lato font-semibold border-2 transition-colors duration-150 hover:border-blue-700 px-5 md:px-7 py-2 md:py-3 rounded-3xl text-white"
-                        >
-                            My Resume
-                        </a>
-                    </button>
+                    <p className="font-playfair font-extrabold text-3xl md:text-5xl leading-tight origin-left transition-all duration-1000 bg-[length:300%_300%] animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r to-red-500 via-slate-500 from-slate-400">My Awesome Services</p>
+                    <p className="font-lato font-medium text-base md:text-lg origin-left transition-all duration-1000 bg-[length:300%_300%] animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r to-red-500 via-slate-500 from-slate-400 px-5 sm:px-0">I always strive to deliver the best user experience by crafting clean, responsive, and accessible interfaces that make users feel confident, comfortable, and delighted while navigating the product.</p>
                 </div>
             </div>
-            <section className="py-10 px-4">
+            <section className="sm:py-5 px-4">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     {items.map((item, index) => (
                         <div
