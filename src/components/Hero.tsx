@@ -9,7 +9,7 @@ export default function Hero() {
             <div className="flex flex-col items-center justify-center mt-5 md:mt-10 gap-5">                
                 <Image
                     src={dp}
-                    alt="Manik's Profile"
+                    alt="Manik’s Profile"
                     draggable="false"
                     className="h-28 w-28 md:h-40 md:w-40 rounded-full object-cover border-4 border-gray-700 shadow-[0_0_12px_rgba(255,255,255,0.1)] ring-2 ring-indigo-500 ring-offset-2 ring-offset-gray-900 transition-transform duration-500 hover:scale-105 animate-floatX sm:animate-floatY"
                 />

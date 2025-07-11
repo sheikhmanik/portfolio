@@ -61,7 +61,7 @@ export default function Project() {
         {
             title: "Restaurant",
             img: restaurant,
-            text: "A responsive website for Emran's Heritage Home, featuring menu, gallery, contact form, and modern layout using JavaScript, ReactJS, TailwindCSS.",
+            text: "A responsive website for Emran’s Heritage Home, featuring menu, gallery, contact form, and modern layout using JavaScript, ReactJS, TailwindCSS.",
             github: "https://github.com/sheikhmanik/",
             live: "https://www.emransheritagehome.com",
         },
