@@ -32,7 +32,7 @@ export default function Contact() {
     }, []);
 
     return (
-        <section ref={sectionRef} id="contact" className="scroll-mt-28 container mx-auto p-4 text-center space-y-6">
+        <section ref={sectionRef} id="contact" className="lg:mt-20 scroll-mt-28 container mx-auto p-4 text-center space-y-6">
             <h2 className="text-4xl md:text-5xl font-playfair font-bold text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-pink-500 to-orange-400">
                 Let’s Connect
             </h2>
