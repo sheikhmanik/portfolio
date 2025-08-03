@@ -6,7 +6,6 @@ import mongodb from "@/assets/mongodb.png";
 import postgresql from "@/assets/postgresql.png";
 import mysql from "@/assets/mysql.png";
 import prisma from "@/assets/prisma.png";
-import firebase from "@/assets/firebase.png";
 import js from "@/assets/js.png";
 import typescript from "@/assets/typescript.png";
 

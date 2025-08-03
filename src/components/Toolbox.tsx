@@ -1,7 +1,7 @@
 "use client"
 
 import toolboxImg from "@/assets/toolbox.jpg";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
