@@ -1,25 +1,43 @@
 "use client"
+
 import toolboxImg from "@/assets/toolbox.jpg";
-import html from "@/assets/html.png";
-import css from "@/assets/css.jpg";
-import tailwind from "@/assets/tailwind.png";
-import js from "@/assets/js.png";
-import nextjs from "@/assets/nextjs.png";
-import react from "@/assets/react.png";
-import typescript from "@/assets/typescript.png";
-import vscode from "@/assets/vscode.jpg";
-import git from "@/assets/git.png";
-import github from "@/assets/github.webp";
-import npm from "@/assets/npm.png";
-import vite from "@/assets/vite.png";
 import Image, { StaticImageData } from "next/image";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+import Frontend from "./toolbox/Frontend";
+import Backend from "./toolbox/Backend";
+import Others from "./toolbox/Others";
 
 export default function Toolbox() {
 
     const sectionRef = useRef(null);
+    const contentRef = useRef(null);
+
+    const [tool, setTool] = useState<String>("frontend");
+    const tabs = ['frontend', 'backend', 'others'];
+
+    useEffect(() => {
+        if (!contentRef.current) return;
+        
+        gsap.fromTo(
+            contentRef.current,
+            {
+                opacity: 0,
+                scaleY: 0.9,
+                transformOrigin: 'center center',
+                filter: 'brightness(0.7)',
+            },
+            {
+                opacity: 1,
+                scaleY: 1,
+                duration: 1,
+                ease: 'power2.out',
+                filter: 'brightness(1)',
+            }
+        );
+    }, [tool]);
 
     useEffect(() => {
         // Register plugin (very important)
@@ -35,28 +53,12 @@ export default function Toolbox() {
                     ease: "power2.out",
                     scrollTrigger: {
                     trigger: sectionRef.current,
-                    start: "top 80%", // when top of element hits 80% of viewport
+                    start: "top 90%", // when top of element hits 80% of viewport
                     toggleActions: "play none none none", // control animation behavior
                 },
             }
         );
     }, []);
-    
-
-    const tools: { img: StaticImageData; label: string }[] = [
-        { img: html, label: "HTML" },
-        { img: css, label: "CSS" },
-        { img: tailwind, label: "Tailwind" },
-        { img: js, label: "JavaScript" },
-        { img: nextjs, label: "Next.js" },
-        { img: react, label: "React.js" },
-        { img: typescript, label: "TypeScript" },
-        { img: vscode, label: "VS Code" },
-        { img: git, label: "Git" },
-        { img: github, label: "GitHub" },
-        { img: npm, label: "npm" },
-        { img: vite, label: "Vite" },
-    ];
 
     return (
         <div ref={sectionRef} className="pt-7 scroll-mt-20" id="toolbox">
@@ -67,22 +69,24 @@ export default function Toolbox() {
                     <p className="font-lato font-medium text-base md:text-lg origin-left transition-all duration-1000 bg-[length:300%_300%] animate-gradient-x text-transparent bg-clip-text bg-gradient-to-r to-red-500 via-slate-500 from-slate-400 px-5 sm:px-0">Here are some of the incredible technologies I genuinely enjoy working with—tools and frameworks that not only empower my creativity but also help me build efficient, beautiful, and scalable user interfaces.</p>
                 </div>
             </div>
-            <div className="mt-7 sm:mt-12 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-6 place-items-center">
-                {tools.map((tool, index) => (
-                    <div
-                        key={index}
-                        className="flex flex-col items-center text-center transition-transform hover:scale-110 duration-500"
-                    >
-                        <Image
-                            src={tool.img}
-                            alt={tool.label}
-                            className="w-14 h-14 sm:w-16 sm:h-16 object-contain bg-cover border-2 border-indigo-500 rounded-xl p-2 shadow-sm"
-                        />
-                        <span className="text-sm text-gray-300 mt-2 font-lato tracking-wide">
-                            {tool.label}
-                        </span>
-                    </div>
-                ))}
+            <div className="mt-10 bg-gray-900/70 backdrop-blur-sm border border-gray-700 rounded-xl p-4 sm:p-6 max-w-md mx-auto shadow-lg">
+                <div className="flex justify-center items-center gap-3">
+                    {tabs.map((tab) => (
+                        <button
+                            key={tab}
+                            onClick={() => setTool(tab)}
+                            className={`${tool === tab ? 'bg-gradient-to-r from-indigo-500 to-purple-500 text-white border-transparent shadow-md' : 'bg-gray-800 text-gray-300 border-gray-700 hover:bg-gray-700 hover:text-white'} px-5 py-2 rounded-full text-sm md:text-base font-semibold capitalize transition-all duration-300 border cursor-pointer`}
+                        >
+                            {tab}
+                        </button>
+                    ))}
+                </div>
+            </div>
+
+            <div ref={contentRef}>
+                { tool === 'frontend' && <Frontend />}
+                { tool === 'backend' && <Backend />}
+                { tool === 'others' && <Others />}
             </div>
         </div>
     )

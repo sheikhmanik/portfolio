@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function TypewriterText ({ text }: { text: string }) {
+export default function Typewriter({ text }: { text: string }) {
     
     const [displayedText, setDisplayedText] = useState<string>("");
     const [index, setIndex] = useState<number>(0);
