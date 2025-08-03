@@ -15,7 +15,7 @@ export default function Toolbox() {
     const sectionRef = useRef(null);
     const contentRef = useRef(null);
 
-    const [tool, setTool] = useState<String>("frontend");
+    const [tool, setTool] = useState<string>("frontend");
     const tabs = ['frontend', 'backend', 'others'];
 
     useEffect(() => {
