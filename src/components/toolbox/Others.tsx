@@ -5,15 +5,17 @@ import git from "@/assets/git.png";
 import github from "@/assets/github.webp";
 import npm from "@/assets/npm.png";
 import vite from "@/assets/vite.png";
+import docker from "@/assets/docker.webp";
 
 export default function Others() {
     
     const tools: { img: StaticImageData; label: string }[] = [
         { img: git, label: "Git" },
         { img: github, label: "GitHub" },
+        { img: docker, label: "Docker" },
+        { img: vscode, label: "VS Code" },
         { img: npm, label: "npm" },
         { img: vite, label: "Vite" },
-        { img: vscode, label: "VS Code" },
     ];
 
     return (
