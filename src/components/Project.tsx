@@ -49,7 +49,7 @@ export default function Project() {
             img: amazon,
             text: "A responsive Amazon clone with authentication, product listing, cart features. Built using ReactJS, TailwindCSS, NodeJS, Express, MySQL, and JavaScript.",
             github: "https://github.com/sheikhmanik/amazon",
-            live: "https://teal-heliotrope-50b11d.netlify.app/",
+            live: "https://amazon-dnzu.onrender.com/",
         },
         {
             title: "Weather App",
