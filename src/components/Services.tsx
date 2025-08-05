@@ -1,9 +1,9 @@
 "use client"
 import services from "@/assets/services.png";
 import frontend from "@/assets/frontend.png";
+import backend from "@/assets/backend.jpg";
 import fastSecure from "@/assets/fast-secure.png";
 import crossPlatform from "@/assets/cross-platform.jpg";
-import scalable from "@/assets/scalable.webp";
 import Image, { StaticImageData } from "next/image";
 
 export default function Services() {
@@ -15,6 +15,11 @@ export default function Services() {
             text: "First impressions matter. I craft modern, responsive UIs that deliver a strong first impression using React and Tailwind CSS.",
         },
         {
+            title: "Back-End",
+            img: backend,
+            text: "Behind every great app is a solid backend. I build reliable, secure systems that ensure performance, scalability, and seamless integration.",
+        },
+        {
             title: "Fast & Secure",
             img: fastSecure,
             text: "Performance and security are top priorities. I ensure that your apps are optimized, fast, and secure from the ground up.",
@@ -24,15 +29,10 @@ export default function Services() {
             img: crossPlatform,
             text: "From desktops to mobile screens, your application will adapt smoothly to every platform using flexible, responsive layouts.",
         },
-        {
-            title: "Scalable",
-            img: scalable,
-            text: "I write clean, scalable, and maintainable code using TypeScript and component-based architecture that grows with your product.",
-        },
     ];
 
     return (
-        <div className="sm:pt-10 scroll-mt-20" id="services">
+        <div className="sm:pt-10 scroll-mt-13 sm:scroll-mt-12" id="services">
             <div className="container mx-auto flex flex-col sm:flex-row items-center gap-5 py-5 h-auto">
                 <Image alt="" src={services} className="sm:w-1/2 h-full sm:animate-floatX rounded-xl" />
                 <div className="sm:w-1/2 gap-3 lg:gap-5 text-center sm:text-start flex flex-col sm:items-start justify-center">

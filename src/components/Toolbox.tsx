@@ -61,7 +61,7 @@ export default function Toolbox() {
     }, []);
 
     return (
-        <div ref={sectionRef} className="pt-7 scroll-mt-20" id="toolbox">
+        <div ref={sectionRef} className="pt-7 scroll-mt-11 sm:scroll-mt-20" id="toolbox">
             <div className="container mx-auto flex flex-col sm:flex-row items-center justify-center gap-5">
                 <Image alt="" src={toolboxImg} className="sm:w-1/2 rounded-xl" />
                 <div className="sm:w-1/2 gap-3 lg:gap-5 text-center sm:text-start flex flex-col sm:items-start justify-center">
