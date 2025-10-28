@@ -2,7 +2,6 @@
 import project from "@/assets/project.png";
 import amazon from "@/assets/amazon.jpg";
 import weather from "@/assets/weather.webp";
-import todo from "@/assets/todo.png";
 import restaurant from "@/assets/restaurant.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -39,11 +38,18 @@ export default function Project() {
 
     const items: {
         title: string;
-        img: StaticImageData;
+        img: StaticImageData | string;
         text: string;
         github: string;
         live: string;
     }[] = [
+        {
+            title: "Website Builder",
+            img: "/website-builder.jpg",
+            text: "This is my biggest project. A fully responsive full-stack website builder built with Next.js and TypeScript. It allows anyone to create their own restaurant business website without any coding knowledge. Simply drag and drop elements, customize layouts, add your own metadata, designs, buttons, text, themes, navbar, footer, and much more.",
+            github: "https://github.com/sheikhmanik/",
+            live: "https://fuvii.com/website-builder/demo/",
+        },
         {
             title: "Amazon Clone",
             img: amazon,
@@ -64,13 +70,6 @@ export default function Project() {
             text: "A responsive website for Emran’s Heritage Home, featuring menu, gallery, contact form, and modern layout using JavaScript, ReactJS, TailwindCSS.",
             github: "https://github.com/sheikhmanik/",
             live: "https://www.emransheritagehome.com",
-        },
-        {
-            title: "To-Do App",
-            img: todo,
-            text: "A simple yet efficient To-Do app with task creation, deletion, local storage. Built using React, TypeScript, and TailwindCSS.",
-            github: "https://github.com/sheikhmanik/todoapp",
-            live: "https://timely-jalebi-954d48.netlify.app",
         },
     ];
 
@@ -96,6 +95,8 @@ export default function Project() {
                             <Image
                                 src={item.img}
                                 alt={item.title}
+                                width={500}
+                                height={500}
                                 className="rounded-xl h-40 w-full object-cover mb-4"
                             />
                             <h2 className="font-playfair font-bold text-2xl text-center text-transparent bg-clip-text bg-[length:300%_300%] animate-gradient-x bg-gradient-to-r from-fuchsia-500 via-pink-500 to-orange-400">
