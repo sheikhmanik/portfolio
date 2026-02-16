@@ -16,7 +16,7 @@ export default function Hero() {
                 <section className="flex flex-col items-center justify-center px-4 text-white md:text-center gap-3">
                     <Typewriter text="Hy! I’m Manik.." />
                     <p className="text-gray-300 text-lg leading-relaxed max-w-2xl font-playfair text-start">
-                        I’m a <span className="text-indigo-400 font-semibold">Software Engineer</span> passionate about crafting accessible, high-performance, and visually engaging web applications, from intuitive user interfaces to robust backend systems.
+                        I’m a <span className="text-indigo-400 font-semibold">Software Developer</span> passionate about crafting accessible, high-performance, and visually engaging web applications, from intuitive user interfaces to robust backend systems.
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5 mt-6">
                         <button
