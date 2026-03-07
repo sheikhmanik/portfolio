@@ -7,17 +7,19 @@ import prisma from "@/assets/prisma.png";
 import js from "@/assets/js.png";
 import typescript from "@/assets/typescript.png";
 import fastify from "@/assets/fastify.png";
+import supabase from "@/assets/supabase.jpg";
 
 export default function Backend() {
 
   const tools: { img: StaticImageData; label: string }[] = [
     { img: js, label: "JavaScript" },
+    { img: typescript, label: "TypeScript" },
     { img: nodejs, label: "Node.js" },
     { img: expressjs, label: "Express.js" },
     { img: fastify, label: "Fastify" },
     { img: postgresql, label: "PostgreSQL" },
     { img: prisma, label: "Prisma" },
-    { img: typescript, label: "TypeScript" },
+    { img: supabase, label: "Supabase" },
   ];
 
   return (

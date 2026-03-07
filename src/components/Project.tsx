@@ -2,7 +2,7 @@
 import project from "@/assets/project.png";
 import amazon from "@/assets/amazon.jpg";
 import invoice from "@/assets/invoice.png";
-import restaurant from "@/assets/restaurant.jpg";
+import grc from "@/assets/grc.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faTachographDigital } from "@fortawesome/free-solid-svg-icons";
@@ -51,18 +51,18 @@ export default function Project() {
       live: "https://fuvii.com/website-builder/demo/",
     },
     {
-      title: "Invoice Creation (frontend)",
+      title: "Invoice App",
       img: invoice,
-      text: "A clean, robust invoice creation application built with Tailwind, NextJS, TypeScript. It allows users to create, manage, and export professional invoices with dynamic data handling and a user-friendly interface.",
+      text: "A clean, robust invoice creation application built with Tailwind, NextJS, ExpressJS, Fastify, NodeJS, Prisma, PostgresSQL, Supabase, TypeScript. It allows users to create, manage, and export professional invoices with dynamic data handling and a user-friendly interface.",
       github: "https://github.com/sheikhmanik/invoicing-frontend",
-      live: "https://github.com/sheikhmanik/invoicing-frontend",
+      live: "https://invoicing-flax.vercel.app",
     },
     {
-      title: "Invoice Creation (backend)",
-      img: invoice,
-      text: "A clean, robust invoice creation application built with Fastify, Prisma, PostgreSQL. It allows users to create, manage, and export professional invoices with dynamic data handling and a user-friendly interface.",
-      github: "https://github.com/sheikhmanik/invoicing-backend",
-      live: "https://github.com/sheikhmanik/invoicing-backend",
+      title: "GRC Compliance Platform",
+      img: grc,
+      text: "An enterprise-style GRC platform for managing assets, risks, compliance frameworks, and role-based permissions with audit logging.",
+      github: "https://github.com/sheikhmanik/vizgrc-backend",
+      live: "https://vizgrc-backend.onrender.com",
     },
     {
       title: "Amazon Clone",
@@ -70,13 +70,6 @@ export default function Project() {
       text: "A responsive Amazon clone with authentication, product listing, cart features. Built using ReactJS, TailwindCSS, NodeJS, Express, MySQL, and JavaScript.",
       github: "https://github.com/sheikhmanik/amazon",
       live: "https://amazon-dnzu.onrender.com/",
-    },
-    {
-      title: "Restaurant",
-      img: restaurant,
-      text: "A responsive website for Emran’s Heritage Home, featuring menu, gallery, contact form, and modern layout using JavaScript, ReactJS, TailwindCSS.",
-      github: "https://github.com/sheikhmanik/",
-      live: "https://www.emransheritagehome.com",
     },
   ];
 
