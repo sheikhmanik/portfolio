@@ -47,21 +47,21 @@ export default function Project() {
       title: "Website Builder",
       img: "/website-builder.jpg",
       text: "This is my biggest project. A fully responsive full-stack website builder built with Next.js and TypeScript. It allows anyone to create their own restaurant business website without any coding knowledge. Simply drag and drop elements, customize layouts, add your own metadata, designs, buttons, text, themes, navbar, footer, and much more.",
-      github: "https://github.com/sheikhmanik/",
+      github: "https://github.com/sheikhmanik/website-builder",
       live: "https://fuvii.com/website-builder/demo/",
     },
     {
-      title: "Invoice App",
+      title: "Invoicing Software",
       img: invoice,
       text: "A clean, robust invoice creation application built with Tailwind, NextJS, ExpressJS, Fastify, NodeJS, Prisma, PostgresSQL, Supabase, TypeScript. It allows users to create, manage, and export professional invoices with dynamic data handling and a user-friendly interface.",
-      github: "https://github.com/sheikhmanik/invoicing-frontend",
+      github: "https://github.com/sheikhmanik/invoicing-software",
       live: "https://invoicing-flax.vercel.app",
     },
     {
       title: "GRC Compliance Platform",
       img: grc,
       text: "An enterprise-style GRC platform for managing assets, risks, compliance frameworks, and role-based permissions with audit logging.",
-      github: "https://github.com/sheikhmanik/vizgrc-backend",
+      github: "https://github.com/sheikhmanik/VizGRC",
       live: "https://vizgrc-backend.onrender.com",
     },
     {
@@ -69,7 +69,7 @@ export default function Project() {
       img: amazon,
       text: "A responsive Amazon clone with authentication, product listing, cart features. Built using ReactJS, TailwindCSS, NodeJS, Express, MySQL, and JavaScript.",
       github: "https://github.com/sheikhmanik/amazon",
-      live: "https://amazon-dnzu.onrender.com/",
+      live: "https://teal-heliotrope-50b11d.netlify.app",
     },
   ];
 
